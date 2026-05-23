@@ -4,7 +4,7 @@ import { experiences } from "../data/portfolio";
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-24 bg-[#FAF9F6] border-t border-black/5">
+    <section id="experience" className="py-16 md:py-24 bg-[#FAF9F6] border-t border-black/5">
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
@@ -14,7 +14,7 @@ export default function Experience() {
           <h2 className="text-3xl sm:text-4xl font-heading font-black tracking-tight text-[#111111]">
             เส้นทางการทำงานและผลงานสร้างสรรค์
           </h2>
-          <p className="text-[#4B5563] mt-3 font-light">
+          <p className="text-[#2D3748] mt-3 font-normal">
             ประสบการณ์การทำงานในด้านการขาย การตลาดออนไลน์ การจัดทำสื่อสร้างสรรค์ และการติดต่อลูกค้าแบบครบวงจร
           </p>
         </div>
@@ -46,9 +46,9 @@ export default function Experience() {
               {/* Grid: Bullets & Metrics */}
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                 {/* Bullets Column */}
-                <div className={`lg:col-span-${exp.metrics ? "8" : "12"} space-y-3`}>
+                <div className={exp.metrics ? "lg:col-span-8 space-y-3" : "lg:col-span-12 space-y-3"}>
                   {exp.bullets.map((bullet, idx) => (
-                    <div key={idx} className="flex items-start space-x-3 text-sm md:text-base text-[#4B5563] font-light leading-relaxed">
+                    <div key={idx} className="flex items-start space-x-3 text-sm md:text-base text-[#2D3748] font-normal leading-relaxed">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#F0A58F] shrink-0 mt-2.5"></span>
                       <span>{bullet}</span>
                     </div>

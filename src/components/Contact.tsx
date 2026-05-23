@@ -38,10 +38,10 @@ export default function Contact() {
 
           {/* Right Column: Contact Channels Grid */}
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
-            {/* Email Card */}
+            {/* Email Card (Full Width in Grid for Layout Balance) */}
             <a
               href={`mailto:${profileData.contact.email}`}
-              className="group bg-zinc-900 border border-white/5 hover:border-[#F0A58F]/50 rounded-2xl p-6 transition-all duration-300 flex flex-col justify-between space-y-4 hover:shadow-lg hover:shadow-black/20"
+              className="group bg-zinc-900 border border-white/5 hover:border-[#F0A58F]/50 rounded-2xl p-6 transition-all duration-300 flex flex-col justify-between space-y-4 hover:shadow-lg hover:shadow-black/20 sm:col-span-2"
             >
               <div className="flex justify-between items-start">
                 <div className="w-10 h-10 rounded-xl bg-zinc-800 border border-white/5 flex items-center justify-center text-[#F0A58F]">
@@ -101,30 +101,6 @@ export default function Contact() {
               <div>
                 <h3 className="text-zinc-500 text-xs font-semibold uppercase tracking-wider">Phone Number</h3>
                 <p className="text-sm font-bold text-white mt-1">{profileData.contact.phone}</p>
-              </div>
-            </a>
-
-            {/* TikTok Card */}
-            <a
-              href={profileData.contact.tiktokUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group bg-zinc-900 border border-white/5 hover:border-[#F0A58F]/50 rounded-2xl p-6 transition-all duration-300 flex flex-col justify-between space-y-4 hover:shadow-lg hover:shadow-black/20"
-            >
-              <div className="flex justify-between items-start">
-                <div className="w-10 h-10 rounded-xl bg-zinc-800 border border-white/5 flex items-center justify-center text-[#F0A58F]">
-                  {/* Share Screen icon or Video icon */}
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z" />
-                  </svg>
-                </div>
-                <span className="text-[10px] text-zinc-500 group-hover:text-[#F0A58F] font-bold tracking-wider uppercase transition-colors">
-                  เปิดช่อง &rarr;
-                </span>
-              </div>
-              <div>
-                <h3 className="text-zinc-500 text-xs font-semibold uppercase tracking-wider">TikTok Channel</h3>
-                <p className="text-sm font-bold text-white mt-1 break-all">{profileData.contact.tiktokUsername}</p>
               </div>
             </a>
           </div>
