@@ -37,7 +37,7 @@ export interface UniversityProject {
 
 export const profileData = {
   name: "ณัฐสินี ชัยหิรัญวาสน์",
-  nickname: "พลอยเพ้นท์ (Ploypaint)",
+  nickname: "พลอยเพ้นท์",
   englishName: "Nutsinee Chaihirunwas",
   positioning: "Marketing Generalist | Content Creator | Social Media & Sales Support",
   intro: {
